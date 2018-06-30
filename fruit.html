@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/home.js"></script>
+    <style>
+        #play-area .panel-body {
+            background: url(../img/fruit-6.jpg) center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main-content">
+            <input type="hidden" name="row-start" value="11" />
+            <div id="setup-area" class="col-xs-12">
+                <div class="panel panel-primary ">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#" id="config">Configuration</a>
+                            <a href="index.html" style="float:right;margin-right:10px;">Home</a>
+                        </h3>
+                    </div>
+                    <div class="panel-body config-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-danger add">Add</button>
+                                <button class="btn btn-success play">Let's Rock</button>
+                                <input type="text" name="vertical-answer" value="ilovefruits" />
+                            </div>
+                        </div>
+                        <div class="row question-row">
+                            <div class="col-xs-12 hide">
+                                <label class="row-number"></label>
+                                <textarea placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">opposed with "same"</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="pineapple" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">opposed with "old"</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="watermelon" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">best vitamin in Lemon</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="corn" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="guava" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="cherry" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="starfruit" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="carrot" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="durian" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="pumkin" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="coconut" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Girl like to wear !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="strawberry" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="play-area" class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Fruit</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="question">
+                            <h1>Ready</h1>
+                            <div class="teacher-image">
+
+                            </div>
+                            <div class="question-content">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="game-cell">
+                            <!--<div class="row-cell">
+                                <div class="cell">1</div>
+                            </div>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="menu-area" class="col-xs-12">
+                <button class="btn btn-info show-vertical-answer not-show-all" title="Show vertical answer !"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                <button class="btn btn-info show-all not-show-all" title="Show all answer !"><span class="glyphicon glyphicon-ok"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-cell-number-popup">
+        <button class="btn btn-info show-question" title="Show question"><span class="glyphicon glyphicon-question-sign"></span></button>
+        <button class="btn btn-info show-answer" title="Show answer"><span class="glyphicon glyphicon-check"></span></button>
+    </div>
+</body>
+</html>

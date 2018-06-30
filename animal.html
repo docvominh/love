@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/home.js"></script>
+    <style>
+        #play-area .panel-body {
+            background: url(../img/animal-3.jpg) center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main-content">
+            <input type="hidden" name="row-start" value="12" />
+            <div id="setup-area" class="col-xs-12">
+                <div class="panel panel-primary ">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#" id="config">Configuration</a>
+                            <a href="index.html" style="float:right;margin-right:10px;">Home</a>
+                        </h3>
+                    </div>
+                    <div class="panel-body config-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-danger add">Add</button>
+                                <button class="btn btn-success play">Let's Rock</button>
+                                <input type="text" name="vertical-answer" value="ilikemonkeys" />
+                            </div>
+                        </div>
+                        <div class="row question-row">
+                            <div class="col-xs-12 hide">
+                                <label class="row-number"></label>
+                                <textarea placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Cô Nguyên cầm tinh con gì ?</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="pig" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Con gì ở dưới nước nhưng bị gọi là heo ?</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="dolphin" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Cô Nguyên khùng lên thì giống con gì ?</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="tiger" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Tên con gì mà "... Lọc nước hàng đầu Việt Nam"</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="kangaroo" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Cô Nguyên chơi bóng rổ thì chạy giống con gì ?</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="turtle" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Con gì mà hay bị mèo Tom đuổi (trả lời là Jerry sẽ bị tộn =)) )</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="mouse" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Con đực có bờm, con cái không có</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="lion" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Chim gì mà biết bơi chứ không biết bay</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="penguin" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Con gì mà có trong bài hát Quac Quac Quac</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="duck" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Bụng cô Nguyên to như con gì ?</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="elephant" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Con gì mà đẻ trứng lên cây chanh, xong trứng nở thành sâu, sâu gặm lá như bợm !</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="butterfly" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 default">
+                                <label class="row-number"></label>
+                                <!--<textarea class="horizontal-question" placeholder="Question">Bầu - Cua - Tôm - ...</textarea>-->
+                                <textarea class="horizontal-question" placeholder="Question"></textarea>
+                                <input type="text" class="horizontal-answer" placeholder="Answer" value="fish" />
+                                <div class="action-group">
+                                    <button class="btn btn-info question-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                                    <button class="btn btn-info question-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                                    <button class="btn btn-danger question-remove"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="play-area" class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Animal</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="question">
+                            <h1>Ready</h1>
+                            <div class="teacher-image">
+
+                            </div>
+                            <div class="question-content">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="game-cell">
+                            <!--<div class="row-cell">
+                                <div class="cell">1</div>
+                            </div>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="menu-area" class="col-xs-12">
+                <button class="btn btn-info show-vertical-answer not-show-all" title="Show vertical answer !"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                <button class="btn btn-info show-all not-show-all" title="Show all answer !"><span class="glyphicon glyphicon-ok"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-cell-number-popup">
+        <button class="btn btn-info show-question" title="Show question"><span class="glyphicon glyphicon-question-sign"></span></button>
+        <button class="btn btn-info show-answer" title="Show answer"><span class="glyphicon glyphicon-check"></span></button>
+    </div>
+</body>
+</html>
